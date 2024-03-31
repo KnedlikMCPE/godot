@@ -26,8 +26,8 @@ jobs:
           - name: Editor w/ Mono (target=editor)
             cache-name: linux-editor-mono
             target: editor
-            sconsflags: module_mono_enabled=yes
-            bin: "./bin/godot.linuxbsd.editor.x86_64.mono"
+            sconsflags: module_mono_enabled=yes arch=arm64
+            bin: "./bin/godot.linuxbsd.editor.aarch64.mono"
             build-mono: true
             tests: false # Disabled due freeze caused by mix Mono build and CI
             doc-test: true
